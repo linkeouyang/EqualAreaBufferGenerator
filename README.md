@@ -11,6 +11,17 @@ Be aware that the Peripheral buffer area doesn't take the polygon's own area int
 ![image](https://user-images.githubusercontent.com/47760513/120261381-60e90b80-c2ca-11eb-92ba-9c4866efbe70.png)
 
 
+## Test and use
+This plugin is still in experimental version. 
+
+***EABG_plugin.zip*** shoule be downloaded and saved in your **QGIS plugin directory** (e.g., C:\Users\UserName\AppData\Roaming\QGIS\QGIS3\profiles\default\python\plugins). Reload the QGIS, this plugin ***EqualAreaBufferGenerator*** can be open from the **Plugins** drop-down menu.
+
+***EqualAreaBufferGenerator.py*** is for anyone who just want to check the core code and pull requests.
+
+***Test.shp*** is a shapfile contains a multi-polygon layer. It is for testing this plugin as an input layer. 
+
+If there is any problem, or any idea, please do not hesitate to contact me. E-mail: linkeouyang@163.com
+
 ## Input Data and Parameter Setting
 ### Import Layer (.shp)
 The ComboBox would only show the vector layers which has been already imported in QGIS.
@@ -32,4 +43,3 @@ The **Unit** of ***Min***, ***Max***, and ***Step*** are consistent with layer's
 ***Step*** is the precision value of buffer width defined by users.
 
 If the ***Min*** and ***Max*** are unsuitable, an Error alert would show. A precise ***Min*** and ***Max***, along with a rough ***Step***, would reduce the computing time.
-
